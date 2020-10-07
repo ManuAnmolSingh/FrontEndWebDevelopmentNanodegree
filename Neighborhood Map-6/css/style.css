@@ -1,0 +1,73 @@
+.LA,.col-md-3
+{
+margin-top: 5px;
+background-color: black;
+
+}
+
+.row
+{
+margin:auto;
+
+}
+body {
+background-color:white;
+color:#0375B4;
+}
+
+h1 {
+font-size:30px;
+font-family: 'Pacifico', cursive;
+text-align: center;
+margin-top: 20px;
+}
+
+h5 {
+font-size:22px;
+}
+
+#searchbar {
+width:260px;
+max-height:500px;
+border:solid 2px #000;
+overflow:hidden;
+}
+
+.main-nav {
+color:#000;
+text-align:left;
+font-size:22px;
+}
+
+li {
+cursor:pointer;
+color:white;
+margin:.5em 0;
+}
+
+li:hover {
+color:#FFF;
+}
+
+#map {
+width:100%;
+height:600px;
+margin-top: 1000px;
+bottom:0;
+margin:auto;
+}
+.CA
+{
+width:1000px;
+background-color: #0375B4;
+text-align:center;
+width: 100%;
+border-radius:10px;
+border-style: solid;
+border-color: white;
+font-size: 40px;
+color: white;
+height: 100px;
+vertical-align: middle;
+display: inline-block;
+}

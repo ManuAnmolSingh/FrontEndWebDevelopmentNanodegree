@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Los Angeles,CA</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+     <div class="CA">
+     <h1>Los Angeles Neighbourhood</h1>
+   </div>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-3">
+               <div class="row site-header">
+                  <div class="col-md-12">
+                     <header class="LA">
+                        <form>
+                           <div class="form-group">
+                              <label for="searchbar">Go Here!</label>
+                              <input type="text" name="searchbar" id="searchbar" class="form-control" data-bind="value: cities, valueUpdate: 'afterkeydown', event: {keyup: filterList}" placeholder="Name of place">
+                           </div>
+                        </form>
+                     </header>
+                  </div>
+               </div>
+               <div>
+                  <ul data-bind="foreach: citiLoc" class="main-nav">
+                     <li class="main-nav-item col-md-12 col-sm-6" data-bind="css: {active: selected},text: LAtitle, click: $parent.setSelected, visible:show"></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-9">
+               <div class="row">
+                  <div class="col-sm-12" id="map"></div>
+                  <div id="map-error">
+                     <h4 data-bind="text: errorDisplay"></h4>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-12">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/knockout.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/new.js"></script>
+
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD35bpxZWVsC9wQ9wJ0NkqD9pDL6k_mqz0&callback=initMap" onerror="LA_error()" async defer></script>
+   </body>
+</html>
